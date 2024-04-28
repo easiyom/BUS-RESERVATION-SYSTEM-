@@ -1,36 +1,44 @@
 #include "SignUp.c"
 int LogIn(){
-    int vote, vote2; 
+    int found = 0; 
+    FILE *inputfile1, *outputfile2;
+    char line[100]; 
     getchar(); 
     char username[USER_LENGTH];
     char password[PASSWORD_LENGTH]; 
-    printf("Enter username: ");
+    printf("\n\n\t\t\t\t\tMembers LogIn\n");
+    printf("\n\t\t\t Customer this was for Members only.\n");
+    printf("\t\t\tEnter username: ");
     scanf("%s", username);
-    printf("Enter password: ");
+    printf("\n\t\t\tEnter password: ");
     scanf("%s", password); 
-    for (int i = 0; i < numusers; i++){
-        if(strcmp(users[i].username, username) == 0 && strcmp(users[i].password, password) == 0){
-            printf("Login successful. Wellcome, %s!\n", username);
-            printf("Send 2 to exit.\n");
-            scanf("%d", &vote); 
-            if(vote == 1){
-                printf("exiting...\n"); 
-                exit(0); 
+    username[strcspn(username, "\n")] = '\0'; 
+    password[strcspn(password, "\n")] = '\0'; 
+
+    inputfile1 = fopen("CreatedAccount.xlsx", "r"); 
+    if(inputfile1 == NULL){
+        printf("Error during opening the file.\n");
+        return 1; 
+    }
+    while (fgets(line, sizeof(line), inputfile1)) {
+        char fileUsername[USER_LENGTH];
+        char filePassword[PASSWORD_LENGTH];
+
+        // Use sscanf to parse the line and extract username and password
+        if (sscanf(line, "%s\t%s", fileUsername, filePassword) == 2) {
+            // Compare extracted username and password with input
+            if (strcmp(fileUsername, username) == 0 && strcmp(filePassword, password) == 0) {
+                found = 1; // Both username and password match
+                break; // Exit the loop
             }
-            return 1; 
         }
     }
-    printf("Login failed. Invalid username or password.\n");
-    printf("\nsend 1 to Exit.\n");
-    scanf("%d", &vote2); 
-    switch (vote2)
-    {
-    case 1:
-        exit(0); 
-        break;
-    
-    default:
-        break;
+ 
+    fclose(inputfile1); 
+    if(found){
+        printf("\n\t\t\t\tDear passenger you scuessfully LogIn.\n");
+        getchar(); 
+    }else{
+        printf("\n\t\t\t\tLogin Failed! Incorrect password/username\n"); 
     }
-    return 0; 
 }
