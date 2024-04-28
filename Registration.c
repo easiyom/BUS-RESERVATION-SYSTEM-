@@ -107,7 +107,7 @@ void Registration(){
 
         }
 
-        FILE *file = fopen("registered.txt", "a"); // open file for writting!
+        FILE *file = fopen("registered.xlsx", "a"); // open file for writting!
         if (file == NULL) {
             printf("Error opening file.\n");
             return; 
