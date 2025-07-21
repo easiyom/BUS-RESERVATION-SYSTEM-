@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm a <span class="highlight">Software Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions and building efficient software systems. 
+                    Specializing in C programming and system development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-animation">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated software developer with a passion for creating efficient and user-friendly applications. 
+                        My journey in programming started with C, where I learned the fundamentals of system programming and 
+                        algorithm design.
+                    </p>
+                    <p>
+                        I enjoy tackling complex problems and turning ideas into functional software solutions. 
+                        Currently, I'm expanding my skills in various programming languages and frameworks to become 
+                        a well-rounded developer.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Multiple</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Software Developer</h3>
+                        <p>Building the future, one line of code at a time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Bus Reservation System Project -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <i class="fas fa-bus"></i>
+                        <h3>Bus Reservation System</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>A comprehensive command-line application built in C for managing bus ticket reservations. 
+                           Features include user registration, login system, ticket booking, cancellation, and rule management.</p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> User Registration & Authentication</li>
+                                <li><i class="fas fa-check"></i> Ticket Booking System</li>
+                                <li><i class="fas fa-check"></i> Ticket Cancellation</li>
+                                <li><i class="fas fa-check"></i> My Tickets View</li>
+                                <li><i class="fas fa-check"></i> Rules & Terms Management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">C Programming</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">CLI Application</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Future Project</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>This space is ready for your next amazing project. Whether it's a web application, 
+                           mobile app, or another system software, it will be showcased here.</p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Another Future Project</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Your portfolio will grow with each new project you create. This section will automatically 
+                           showcase your developing skills and expanding knowledge.</p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>C Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Linux/Unix</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Concepts & Practices</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Data Structures</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Algorithm Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Problem Solving</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in new opportunities and collaborations. 
+                       Feel free to reach out if you'd like to work together or just say hello!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>your.email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/yourprofile</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/yourusername</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 My Portfolio. Built with passion and dedication.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
