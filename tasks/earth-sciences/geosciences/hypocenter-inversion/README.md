@@ -6,7 +6,7 @@ Relocate a local earthquake from first-arriving P times through a 1-D layered ve
 
 | | |
 |---|---|
-| **Author** | Estifanos Tagel (Independent Researcher) — southafrican232@gmail.com |
+| **Author** | Muayed Reshid (Independent Researcher) — muayed.r@turing.com |
 | **Profile** | https://github.com/easiyom |
 | **Domain** | earth-sciences / geosciences / seismology |
 | **Tags** | `seismology` `hypocenter` `travel-time` `inverse-problem` |
