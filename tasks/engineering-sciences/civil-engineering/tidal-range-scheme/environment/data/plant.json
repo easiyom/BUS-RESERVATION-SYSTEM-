@@ -1,0 +1,21 @@
+{
+  "g_m_s2": 9.81,
+  "seawater_density_kg_m3": 1025.0,
+  "dt_s": 600.0,
+  "n_turbines": 24,
+  "n_sluices": 16,
+  "turbine_area_m2": 40.0,
+  "sluice_area_m2": 85.0,
+  "turbine_cd": 0.85,
+  "sluice_cd": 1.0,
+  "turbine_efficiency": 0.82,
+  "turbine_start_head_m": 2.5,
+  "turbine_min_head_m": 1.2,
+  "turbine_rated_power_w": 12000000.0,
+  "sluice_open_head_m": 0.05,
+  "initial_basin_level_m": 8.6,
+  "mode": "ebb_only",
+  "depth_positive": "up",
+  "area_interpolation": "linear_clamp",
+  "time_step_scheme": "forward_euler"
+}
