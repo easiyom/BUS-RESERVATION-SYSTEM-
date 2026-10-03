@@ -16,3 +16,4 @@ RUN pip install --no-cache-dir \
 WORKDIR /root
 
 COPY data /root/data
+RUN mkdir -p /root/results
