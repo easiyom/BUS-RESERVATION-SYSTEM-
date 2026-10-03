@@ -1,0 +1,9 @@
+{
+  "reference_latitude_deg": 37.35,
+  "reference_longitude_deg": -121.9,
+  "earth_radius_km": 6371.0,
+  "reference_epoch_utc": "2024-03-12T07:14:00Z",
+  "depth_positive": "down",
+  "projection": "local_tangent_plane",
+  "station_depth_km": "station_depth_km = -elevation_m / 1000"
+}
