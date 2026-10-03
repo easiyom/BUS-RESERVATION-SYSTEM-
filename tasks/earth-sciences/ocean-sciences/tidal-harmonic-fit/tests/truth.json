@@ -1,0 +1,52 @@
+{
+  "Z0": {
+    "amplitude_m": 1.247,
+    "phase_deg": 0.0,
+    "frequency_deg_per_hour": 0.0
+  },
+  "M2": {
+    "amplitude_m": 0.842,
+    "phase_deg": 214.3,
+    "frequency_deg_per_hour": 28.9841042
+  },
+  "S2": {
+    "amplitude_m": 0.231,
+    "phase_deg": 187.6,
+    "frequency_deg_per_hour": 30.0
+  },
+  "N2": {
+    "amplitude_m": 0.168,
+    "phase_deg": 142.1,
+    "frequency_deg_per_hour": 28.4397295
+  },
+  "K2": {
+    "amplitude_m": 0.062,
+    "phase_deg": 201.4,
+    "frequency_deg_per_hour": 30.0821373
+  },
+  "K1": {
+    "amplitude_m": 0.387,
+    "phase_deg": 318.9,
+    "frequency_deg_per_hour": 15.0410686
+  },
+  "O1": {
+    "amplitude_m": 0.241,
+    "phase_deg": 295.2,
+    "frequency_deg_per_hour": 13.9430356
+  },
+  "P1": {
+    "amplitude_m": 0.128,
+    "phase_deg": 311.0,
+    "frequency_deg_per_hour": 14.9589314
+  },
+  "Q1": {
+    "amplitude_m": 0.047,
+    "phase_deg": 268.5,
+    "frequency_deg_per_hour": 13.3986609
+  },
+  "M4": {
+    "amplitude_m": 0.034,
+    "phase_deg": 88.7,
+    "frequency_deg_per_hour": 57.9682084
+  }
+}
