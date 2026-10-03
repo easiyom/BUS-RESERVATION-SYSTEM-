@@ -1,0 +1,14 @@
+{
+  "protein_uM": 1.5,
+  "mechanism": "A + B <=> C -> D",
+  "parameter_units": {
+    "k1": "1/(uM*s)",
+    "k_minus_1": "1/s",
+    "k2": "1/s",
+    "alpha_C": "fluorescence_per_uM",
+    "alpha_D": "fluorescence_per_uM",
+    "F0": "fluorescence"
+  },
+  "fluorescence_model": "F = F0 + alpha_C * [C] + alpha_D * [D]",
+  "initial_conditions": "[A](0)=protein_uM, [B](0)=ligand_uM, [C](0)=0, [D](0)=0"
+}
