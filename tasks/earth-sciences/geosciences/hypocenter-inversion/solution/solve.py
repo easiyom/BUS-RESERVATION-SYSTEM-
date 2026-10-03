@@ -229,9 +229,16 @@ def main():
     )
     out = Path("/root/results")
     out.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame([est], columns=[
-        "latitude_deg", "longitude_deg", "depth_km", "origin_time_s", "rms_residual_s"
-    ]).to_csv(out / "hypocenter.csv", index=False)
+    pd.DataFrame([
+        {
+            "latitude_deg": est["latitude_deg"],
+            "longitude_deg": est["longitude_deg"],
+            "depth_km": est["depth_km"],
+            "origin_time_s": est["origin_time_s"],
+        }
+    ], columns=["latitude_deg", "longitude_deg", "depth_km", "origin_time_s"]).to_csv(
+        out / "hypocenter.csv", index=False
+    )
 
 
 if __name__ == "__main__":
