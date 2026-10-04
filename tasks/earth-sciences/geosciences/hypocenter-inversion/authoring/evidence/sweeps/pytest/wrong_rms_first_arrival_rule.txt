@@ -9,9 +9,9 @@ test_state.py ........F.                                                 [100%]
 ______________________ test_rms_residual_reported_matches ______________________
 test_state.py:120: in test_rms_residual_reported_matches
     assert abs(got - rms) <= RMS_MATCH_TOL, (
-E   AssertionError: reported rms_residual_s 1.129772324634703 vs recomputed 0.018894730562647098 (tolerance 0.005)
-E   assert 1.1108775940720559 <= 0.005
-E    +  where 1.1108775940720559 = abs((1.129772324634703 - 0.018894730562647098))
+E   AssertionError: reported rms_residual_s 1.3220089470638476 vs recomputed 0.01859436275752109 (tolerance 0.005)
+E   assert 1.3034145843063265 <= 0.005
+E    +  where 1.3034145843063265 = abs((1.3220089470638476 - 0.01859436275752109))
 ==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED test_state.py::test_file_exists

@@ -15,7 +15,7 @@ Conventions:
 2. Depth is positive downward. Hypocenter depth is kilometres below sea level. Station depth is `station_depth_km = -elevation_m / 1000`.
 3. The P branches at a station are the direct ray between source and station through the flat layers, and each head wave critically refracted along an interface at or below the source depth, where that head wave exists at the station's epicentral distance. Do not substitute a homogeneous half-space or a constant velocity.
 
-The `phase` column does not say which branch was picked. Beyond the crossover distance the head wave on this network is emergent, and at some stations the analyst missed it and picked the later direct P. Which stations is not recorded. Every other pick is the first-arriving branch.
+The `phase` column does not identify the branch, and a pick is not necessarily the first arrival.
 
 The residual at a station is its observed time minus (origin time + the travel time of whichever existing branch predicts an arrival closest to the observed time), evaluated at the reported hypocenter.
 
