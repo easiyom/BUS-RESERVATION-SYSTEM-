@@ -1,8 +1,5 @@
 {
   "time_origin_utc": "2023-09-04T00:00:00Z",
-  "time_unit": "hour",
-  "missing_value": "NaN",
-  "phase_convention": "eta = Z0 + sum R_k * cos(omega_k * t - phi_k)",
   "frequencies_deg_per_hour": {
     "Z0": 0.0,
     "M2": 28.9841042,
