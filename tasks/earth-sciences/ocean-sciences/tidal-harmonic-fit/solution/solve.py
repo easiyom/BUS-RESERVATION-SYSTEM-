@@ -22,7 +22,6 @@ def fit_constituents(hours, eta, names, frequencies):
     coef, *_ = np.linalg.lstsq(np.column_stack(cols), y, rcond=None)
     rows = [{
         "constituent": "Z0",
-        "frequency_deg_per_hour": float(frequencies["Z0"]),
         "amplitude_m": float(coef[0]),
         "phase_deg": 0.0,
     }]
@@ -33,7 +32,6 @@ def fit_constituents(hours, eta, names, frequencies):
         k += 2
         rows.append({
             "constituent": name,
-            "frequency_deg_per_hour": float(frequencies[name]),
             "amplitude_m": float(np.hypot(a, b)),
             "phase_deg": float(np.degrees(np.arctan2(b, a)) % 360.0),
         })
@@ -51,9 +49,7 @@ def main():
     rows = fit_constituents(hours, eta, spec["required_constituents"], spec["frequencies_deg_per_hour"])
     out = Path("/root/results")
     out.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(rows, columns=[
-        "constituent", "frequency_deg_per_hour", "amplitude_m", "phase_deg"
-    ]).to_csv(out / "tide_constituents.csv", index=False)
+    pd.DataFrame(rows, columns=["constituent", "amplitude_m", "phase_deg"]).to_csv(out / "tide_constituents.csv", index=False)
 
 
 if __name__ == "__main__":
